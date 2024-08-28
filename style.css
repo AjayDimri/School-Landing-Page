@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+
+.main{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    /* background-color: tomato; */
+}
+
+.nav{
+    height: 80px;
+    width: 100%;
+    /* background-color: peachpuff; */
+    display: flex;
+    /* border-bottom: 1px solid #dadada; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 4vw;
+}
+
+.nav h2{
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.nav h2 span{
+    color: #5E62DD;
+}
+
+.nav-part2{
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+}
+
+.nav h4{
+    font-size: 1.2vw;
+}
+
+
+.nav i{
+    font-size: 1.4vw;
+    font-weight: 500;
+    display: none;
+    /* display: none; because of this menu icon will now be dislayed on lanscape view of the web page, but all ohthe H4s
+    will be visible*/
+}
+
+.nav button{
+    font-size: 1vw;
+    padding: 0.4vw 0.8vw;
+    background-color: #5E62DD;
+    /* background-color: #FBD15B; */
+    color: whitesmoke;
+    font-weight: 800;
+    /* border: none; */
+    border-radius: 2px;
+}
+
+
+.content{
+    height: calc(100% - 80px);
+    /* height: calc(100% - 80px); in this "calc(100% - 80px)" will apply arithematic calulations calc(100% - 80px): here
+    100% is the total height of the web page and out of which we are subtracting 80px(height of the Nav) and it will give us
+    content div the accurate height. */
+    width: 100%;
+    /* background-color: lightsalmon; */
+    display: flex;
+    position: relative;
+}
+
+.left{
+    height: 100%;
+    width: 55%;
+    /* background-color: blanchedalmond; */
+    padding: 4vw 4vw;
+}
+
+.left h1{
+    font-size: 5.1vw;
+    line-height: 5vw;
+}
+
+.left h1 span{
+    color: #5E62DD;
+    font-weight: 700;
+}
+
+.left p{
+    font-size: 1.35vw;
+    font-weight: 550;
+    color: #666;
+    width: 85%;
+    margin-top: 2vw;
+    margin-bottom: 3vw;
+    font-family: monospace;
+}
+
+.content button{
+    font-size: 1.3vw;
+    padding: 0.6vw 1.3vw;
+    background-color: #5E62DD;
+    color: #fff;
+    font-weight: 700;
+    /* border: none; */
+    border-radius: 2px;
+}
+
+.right{
+    height: 100%;
+    width: 45%;
+    /* background-color: aquamarine; */
+}
+
+.right img{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+@media(max-width:500px){
+
+    .nav{
+        /* background-color: lightseagreen; */
+        /* color: whitesmoke; */
+        padding: 0 5vw;
+        height: 50px;
+    }
+
+    .nav h2{
+        font-size: 4vw;
+    }
+
+    .nav h4{
+        font-size: 4vw;
+        display: none;
+        /* display: none; because of this all h4 will now be hide on potrait(Mobile) view of the web page */
+    }
+
+    .nav button{
+        display: none;
+    }
+
+    .nav i{
+        display: block;
+        font-size: 4.2vw;
+    }
+
+
+    .content{
+        height: calc(100% - 50px);
+        flex-direction: column;
+    }
+
+    .left{
+        width: 100%;
+        height: 45%;
+        padding: 4vw 5vw;
+    }
+
+    .left h1{
+        font-size: 10vw;
+        line-height: 11vw;
+    }
+
+    .left p{
+        font-size: 3vw;
+        width: 90%;
+        margin-top: 5vw;
+        margin-bottom: 4.5vw;
+    }
+
+    .content button{
+        padding: 2vw 3vw;
+        font-size: 3vw;
+        border-radius: 2px;
+        font-weight: 600;
+    }
+
+    .right{
+        width: 100%;
+        height: 55%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
